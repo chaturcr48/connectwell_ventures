@@ -2052,3 +2052,7 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.home_page_number{
+  background-color: rgba(0, 0, 0, 0.684);
+}
