@@ -25,37 +25,54 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 
+
   <script>
     function submitForm(event) {
-      event.preventDefault();
+      event.preventDefault(); // Prevent default form submission
 
+      // Get form values
       const name = document.getElementById("name").value;
       const phone = document.getElementById("phone").value;
       const email = document.getElementById("email").value;
 
+      // Create an object with the data
       const data = {
         name: name,
         phone: phone,
         email: email
       };
 
-      fetch("https://script.google.com/macros/s/AKfycbxXk5K0hbO2e9YQKCUtj9zon_sPqqEWcAjz3Am76hIOw52qnOkVsgwY2GgYzQVm9NNs/exec", {
+
+      // Send data to the Google Apps Script Web App URL
+      fetch("https://script.google.com/macros/s/AKfycbz1epaJ25I7u14iR_XhWzFaFHW3qo5crNd_iWCzzytTx6TuWshwdXBAVTBWVApmfHrg/exec", { 
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
+        mode: "no-cors",
         body: JSON.stringify(data)
       })
-        .then(response => response.text())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+          return response.json();
+        })
         .then(data => {
-          alert("Data submitted successfully!");
+          if (data.status === "Success") {
+            alert("Data submitted successfully!");
+          } else {
+            alert("Error: " + data.message);
+          }
           document.getElementById("userForm").reset();
         })
         .catch(error => {
           console.error("Error:", error);
+          alert("There was an error submitting your data. Please try again later.");
         });
     }
   </script>
+
 
 </head>
 
@@ -191,23 +208,23 @@
 
   </main>
 
-<div class="container">
+  <div class="container">
 
-  <h1>Submit Your Details</h1>
-  <form id="userForm" onsubmit="submitForm(event)">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+    <h1>Submit Your Details</h1>
+    <form id="userForm" onsubmit="submitForm(event)">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-    <label for="phone">Phone Number:</label><br>
-    <input type="text" id="phone" name="phone" required><br><br>
+      <label for="phone">Phone Number:</label><br>
+      <input type="text" id="phone" name="phone" required><br><br>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-    <input type="submit" value="Submit">
-  </form>
+      <input type="submit" value="Submit">
+    </form>
 
-</div>
+  </div>
 
 
   <footer id="footer" class="footer dark-background">
