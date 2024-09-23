@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,8 +37,9 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <h1 class="sitename" style="background-color: white;">
-          <img src="/assets/img/connectwell_ventures.png" alt=""></h1>
-          
+          <img src="/assets/img/connectwell_ventures.png" alt="">
+        </h1>
+
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -48,6 +51,11 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <a class="btn-getstarted" id="admin-login" href="#" onclick="adminLogin()">Admin Login</a>
+      <a class="btn-getstarted" id="customer-list" style="display: none;" href="customers.html">Customer List</a>
+      <!-- <li id="customer-list" style="display: none;"><a href="customer_list.html">Customer List</a></li> -->
+      <!-- <li id="admin-login"><a href="#" onclick="adminLogin()">Admin Login</a></li> -->
 
     </div>
   </header>
@@ -69,55 +77,59 @@
 
         </div>
 
-            <div class="row gy-4 home_page_number" data-aos="fade-up" data-aos-delay="300">
+        <div class="row gy-4 home_page_number" data-aos="fade-up" data-aos-delay="300">
 
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100 home_page_number">
-                  <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
-                  <p>Clients</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
-                  <p>Projects</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
-                  <p>Support</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="0" class="purecounter">15</span>
-                  <p>Workers</p>
-                </div>
-              </div><!-- End Stats Item -->
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100 home_page_number">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0"
+                class="purecounter">232</span>
+              <p>Clients</p>
             </div>
-          </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0"
+                class="purecounter">521</span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0"
+                class="purecounter">1453</span>
+              <p>Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="0"
+                class="purecounter">15</span>
+              <p>Workers</p>
+            </div>
+          </div><!-- End Stats Item -->
         </div>
       </div>
-    </div>
-    </div>
+      </div>
+      </div>
+      </div>
+      </div>
 
     </section><!-- /Hero Section -->
 
-      <section id="testimonials" class="testimonials section">
+    <section id="testimonials" class="testimonials section">
 
-        <div class="container section-title" data-aos="fade-up">
-          <span>Our Top Hero Products<br></span>
-          <h2>Our top selling product</h2>
-        </div>
-  
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-  
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
+      <div class="container section-title" data-aos="fade-up">
+        <span>Our Top Hero Products<br></span>
+        <h2>Our top selling product</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 600,
@@ -142,145 +154,163 @@
                 }
               }
             </script>
-            <div class="swiper-wrapper">
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_210686548_Preview.jpeg" class="img-fluid" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_210686548_Preview.jpeg" class="img-fluid" alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
               </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px" alt="">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-
-
-
-
-
             </div>
-            <div class="swiper-pagination"></div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid" alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid" alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid" alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px"
+                  alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px"
+                  alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px"
+                  alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px"
+                  alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px"
+                  alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px"
+                  alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="/assets/img/mota/AdobeStock_135462369_Preview.jpeg" class="img-fluid rounded-3" height="350px"
+                  alt="">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+
+
+
+
           </div>
-  
+          <div class="swiper-pagination"></div>
         </div>
-  
-      </section>
+
+      </div>
+
+    </section>
 
 
 
@@ -300,7 +330,8 @@
             <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
             <div>
               <h4 class="title">Safety</h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                occaecati cupiditate non provident</p>
             </div>
           </div>
 
@@ -308,7 +339,8 @@
             <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
             <div>
               <h4 class="title">Fastest Delivery</h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat tarad limino ata</p>
             </div>
           </div>
 
@@ -316,7 +348,8 @@
             <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
             <div>
               <h4 class="title">Quality</h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -333,7 +366,8 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up"
+            data-aos-delay="200">
             <img src="assets/img/Mission.png" class="img-fluid" alt="">
             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
           </div>
@@ -341,7 +375,9 @@
           <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
             <h3>About Us</h3>
             <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
+              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia
+              molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis
+              veritatis asperiores placeat.
             </p>
             <ul>
               <li>
@@ -376,97 +412,106 @@
 
     <!-- Services Section -->
     <section id="services" class="services section">
-    
-    <section id="features" class="features section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Features</span>
-        <h2>Features</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      <section id="features" class="features section">
 
-      <div class="container">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span>Features</span>
+          <h2>Features</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
 
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/mota/AdobeStock_297533944_Preview.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-            <h3>Double Hoist Crane with Two Hooks for Tandem & Separate Control</h3>
-            <p class="fst-italic">
-              Double hoist overhead crane & gantry crane for sale. Double hoist crane, Single girder & Double girder crane with Two Hooks for Tandem & Separate Control.
+        <div class="container">
+
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+              <img src="assets/img/mota/AdobeStock_297533944_Preview.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+              <h3>Double Hoist Crane with Two Hooks for Tandem & Separate Control</h3>
+              <p class="fst-italic">
+                Double hoist overhead crane & gantry crane for sale. Double hoist crane, Single girder & Double girder
+                crane with Two Hooks for Tandem & Separate Control.
 
 
-            </p>
-            <ul>
-              <li><i class="bi bi-check"></i><span> High lifting capacities for heavy materials in outdoor settings.
-              </span></li>
-              <li><i class="bi bi-check"></i> <span>Enhanced stability and precision for critical lifting operations.</span></li>
-              <li><i class="bi bi-check"></i> <span>Suitable for heavy-duty applications requiring outdoor mobility.</span></li>
-            </ul>
-          </div>
-        </div><!-- Features Item -->
+              </p>
+              <ul>
+                <li><i class="bi bi-check"></i><span> High lifting capacities for heavy materials in outdoor settings.
+                  </span></li>
+                <li><i class="bi bi-check"></i> <span>Enhanced stability and precision for critical lifting
+                    operations.</span></li>
+                <li><i class="bi bi-check"></i> <span>Suitable for heavy-duty applications requiring outdoor
+                    mobility.</span></li>
+              </ul>
+            </div>
+          </div><!-- Features Item -->
 
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/mota/AdobeStock_943864179_Preview.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
-            <h3>INSULATED TOOLS BOX</h3>
-            <p class="fst-italic">
-              This assorted toolkit is compiled with the most commonly used tools and sizes when performing electrical maintenance and operations. This is a universal set of tools useful for every industry.
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+              <img src="assets/img/mota/AdobeStock_943864179_Preview.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+              <h3>INSULATED TOOLS BOX</h3>
+              <p class="fst-italic">
+                This assorted toolkit is compiled with the most commonly used tools and sizes when performing electrical
+                maintenance and operations. This is a universal set of tools useful for every industry.
 
-Manufactured acc. to EN/IEC 60900. Each tool is individually tested at 10,000 V AC.
-With foam material inserts in a durable plastic case.
-Impact Tested and Stamp Tested
-It’s Flame Retardancy Tested
-Electrically Certified and VDE Tested
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div><!-- Features Item -->
+                Manufactured acc. to EN/IEC 60900. Each tool is individually tested at 10,000 V AC.
+                With foam material inserts in a durable plastic case.
+                Impact Tested and Stamp Tested
+                It’s Flame Retardancy Tested
+                Electrically Certified and VDE Tested
+              </p>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in
+                culpa qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+          </div><!-- Features Item -->
 
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-            <img src="assets/img/mota/AdobeStock_286049816_Preview.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7" data-aos="fade-up">
-            <h3>EOT CRANE</h3>
-            <p>OVERHEAD EOT CRANE</p>
-            <ul>
-              <li><i class="bi bi-check"></i> <span>Easy operation and rugged construction</span></li>
-              <li><i class="bi bi-check"></i><span> Lower power indication and auto power-off.</span></li>
-              <li><i class="bi bi-check"></i> <span>Auto-zero tracking, power saving mode.</span>.</li>
-            </ul>
-          </div>
-        </div><!-- Features Item -->
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+              <img src="assets/img/mota/AdobeStock_286049816_Preview.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7" data-aos="fade-up">
+              <h3>EOT CRANE</h3>
+              <p>OVERHEAD EOT CRANE</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Easy operation and rugged construction</span></li>
+                <li><i class="bi bi-check"></i><span> Lower power indication and auto power-off.</span></li>
+                <li><i class="bi bi-check"></i> <span>Auto-zero tracking, power saving mode.</span>.</li>
+              </ul>
+            </div>
+          </div><!-- Features Item -->
 
-        <div class="row gy-4 align-items-center features-item">
-          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-            <img src="assets/img/mota/AdobeStock_494034291_Preview.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div><!-- Features Item -->
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+              <img src="assets/img/mota/AdobeStock_494034291_Preview.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+              <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+              </p>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in
+                culpa qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+          </div><!-- Features Item -->
 
-      </div>
+        </div>
 
-    </section>
+      </section>
 
   </main>
 
@@ -478,7 +523,8 @@ Electrically Certified and VDE Tested
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Connectwell Venture</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -522,16 +568,61 @@ Electrically Certified and VDE Tested
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Connectwell Venture</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Connectwell Venture</strong> <span>All Rights
+          Reserved</span></p>
     </div>
 
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyB6s7lp6mTJefqK5TPyfwSWQUk75uhHV6k",
+      authDomain: "connectwell-venture.firebaseapp.com",
+      projectId: "connectwell-venture",
+      storageBucket: "connectwell-venture.appspot.com",
+      messagingSenderId: "237188331073",
+      appId: "1:237188331073:web:5439a512441f416a98f8c0"
+    };
+
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    function adminLogin() {
+      const email = prompt("Enter admin email");
+      const password = prompt("Enter password");
+      auth.signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          checkAdminRole(user.uid);
+        })
+        .catch((error) => {
+          alert("Login failed: " + error.message);
+        });
+    }
+
+    function checkAdminRole(uid) {
+      db.collection("users").doc(uid).get().then((doc) => {
+        if (doc.exists && doc.data().role === 'admin') {
+          document.getElementById("customer-list").style.display = "block";
+          alert("Welcome Admin!");
+        } else {
+          alert("You are not authorized to view this page");
+        }
+      }).catch((error) => {
+        console.log("Error getting document:", error);
+      });
+    }
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
